@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('profile/index.html')
+    return render_template('index.html')
 
 
 @app.route('/login')
@@ -17,7 +17,9 @@ def login():
 def reg():
     return render_template('auth/signup.html')
 
-
+@app.route('/studentdir')
+def studentdir():
+    return render_template('Student/index.html')
 
 
 
