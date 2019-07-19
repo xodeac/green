@@ -5,12 +5,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('profile/index.html')
 
 
 @app.route('/login')
 def login():
     return render_template('auth/login.html')
+
+
+@app.route('/reg')
+def reg():
+    return render_template('auth/signup.html')
 
 
 

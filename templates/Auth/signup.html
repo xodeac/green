@@ -9,7 +9,7 @@
        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
 
-    <title>FREEK - Login</title>
+    <title>FREEK - Register</title>
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,7 +35,7 @@
         <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-           <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto">
       <li class="nav-item ">
         <a class="nav-link" href="/login">Login</a>
       </li>
@@ -51,23 +51,46 @@
 
 
 
-<div class="container" style="padding: 0; margin: 16% 10%">
-    <h1>Login</h1>
-    </br>
-    <form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
-  </div>
+<div class="container" style="padding: 0; margin: 10% 10%">
+    <h1>Register</h1>
+</br>
+        <form action="/">
         <div class="form-group">
-  <button type="submit" class="btn btn-secondary my-2 my-sm-0">Login</button>
-         <button type="submit" class="btn btn-secondary my-2 my-sm-0">Sign up</button>
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
         </div>
-</form>
+        <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+        </div>
+
+        <div class="form-group">
+        <label for="pwd">Good Name:</label>
+        <input type="text" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+        </div>
+
+
+         <div class="form-group">
+        <label for="pwd">Identity Number:</label>
+        <input type="text" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+        </div>
+
+        <div class="form-group">
+        <label for="pwd">Country:</label>
+        <input type="text" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+        </div>
+
+         <div class="form-group">
+        <label for="pwd">City:</label>
+        <input type="text" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+        </div>
+
+        <div class="form-group">
+        <button type="submit" class="btn btn-secondary my-2 my-sm-0">Sign up</button>
+        <button type="submit" class="btn btn-secondary my-2 my-sm-0">Login</button>
+
+        </div>
+        </form>
 </div>
 
 
