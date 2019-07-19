@@ -9,45 +9,57 @@
        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
 
-    <title>FREEK</title>
+    <title>FREEK - Login</title>
   </head>
   <body>
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="{{ url_for('index') }}">FREEK</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ url_for('index') }}">FREEK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor01">
         <ul class="navbar-nav mr-auto">
-      <li class="nav-item ">
-        <a class="nav-link" href="#">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/register">Register</a>
-      </li>
-    </ul>
-    </form>
-  </div>
-</nav>
+        <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        <a class="nav-link" href="/login"> <button class="btn btn-secondary my-2 my-sm-0" type="submit">Login</button></a>
+        <a class="nav-link" href="/register"> <button class="btn btn-secondary my-2 my-sm-0" type="submit">Sign up</button></a>
+        </form>
+        </div>
+        </nav>
 
+
+
+<div class="container" style="padding: 0; margin: 16% 10%">
+    <h1>Login</h1>
+    <form action="/action_page.php">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" style="border-color:#727af5bf; box-shadow: 0 0 0 0.2rem rgba(15, 114, 217, 0.25);">
+  </div>
+        <div class="form-group">
+  <button type="submit" class="btn btn-secondary my-2 my-sm-0">Login</button>
+         <button type="submit" class="btn btn-secondary my-2 my-sm-0">Sign up</button>
+        </div>
+</form>
+</div>
 
 
 
